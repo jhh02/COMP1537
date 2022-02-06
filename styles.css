@@ -11,19 +11,87 @@
 
 #wrapper {
     display: grid;
-    grid-template-columns: 3fr 7fr;
-    column-gap: 5%;
+    grid-template-columns: 1fr 4fr;
+}
+
+#aside {   
+    padding: 50px 0px 50px 50px;
+
+}
+
+
+#logo {
+    height: 200px;
+}
+
+.header-logo{
+    height: 25px;
+}
+
+.header-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.header-item p {
+    justify-self: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.left-sub-sec_img {
+    height: 150px;
+}
+
+.left-subsection {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+
+}
+
+.left-subsection > p {
+    font-size: 1.5rem;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.sub-section {
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    margin-bottom: 50px;
+}
+.sub-section :nth-child(1) {
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.sub-section :nth-child(2) {
+    justify-self: center;
+    width: 100%;
+}
+
+.sub-section :nth-child(3) {
+    font-size: 0.9rem;
+    align-self: center;
+    line-height: 15px;
+}
+
+
+#header {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    margin: 20px 0;
+}
+
+#main {
     padding: 50px;
 
 }
 
-#aside {   
-
-
-
-}
-
-#main {
-
-
+figure > img {
+    width: 100%;
 }
