@@ -2,12 +2,14 @@
     font-family: 'Lato';
     src: url('./fonts/Lato/Lato-Black.ttf') format('truetype');
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lato';
     width: 100%;
+
 }
 @media  (max-width: 700px) {
     #wrapper {
@@ -17,11 +19,13 @@
         width: 100%;
     }
     #aside {
+        position: relative;
         display: flex;
         flex-flow: column;
         padding: 0;
         width: 100%;
         justify-content: space-around;
+        padding-top: 15%;
     }
     #logo {
         width: 20%;
@@ -32,6 +36,7 @@
     .logo-div{
         display: flex;
         justify-content: center;
+        z-index: -1;
     }
     #main {
         padding: 0;
@@ -42,14 +47,18 @@
         order: -1;
         margin: 0;
         width: 100%;
+        background-color: white;
+        position: fixed;
+        z-index : 3;
+        padding: 2% 0%;
+        margin-bottom: 50%;
     }
     .header-item {
-        max-width: 20%;
-        padding-left: 5%;
-        padding-top: 5%;
+        max-width: 17%;
+        padding-left: 2%;
     }
     .header-item p {
-        font-size:1rem;
+        font-size: .7rem;
     }
     .header-logo {
         display: none;
@@ -95,7 +104,7 @@
     .img-text {
         font-size: 1rem;
         font-style: italic;
-        width: 100%;
+
     }
     .right-subsection-second_logo {
         width: 30%;
@@ -126,6 +135,9 @@
     .right-section-third_text {
         font-size: .8rem;
     }
+    #footer {
+        display: none;
+    }
 }
 @media (min-width: 701px) and (max-width:1280px ) {
     #wrapper {
@@ -135,12 +147,18 @@
         display: grid;
         grid-template-columns: 1fr 3fr ;
         grid-template-rows: repeat(1, 1fr);
-        margin: 3%;
+        padding-bottom: 3%;
+        background-color: white;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index : 3;
     }
     #header {
         display: grid;
         grid-template-columns: repeat(5, 1fr);  
     }
+    
     .header-item {
         display: grid;
         justify-items: baseline;
@@ -299,16 +317,17 @@
     }
     #logo {
         width: 60%;
-        margin: 0;
+
     }
     #header {
         display: grid;
         grid-template-rows: repeat(5, 1fr) ;
         align-self: flex-start;
         margin-top: 15%;
+
     }
     .header-logo{
-        width: 80%;
+        width: 60%;
     }
     .header-item {
         display: grid;
@@ -540,6 +559,7 @@
         grid-template-rows: repeat(5, 1fr) ;
         align-self: flex-start;
         margin-top: 15%;
+        
     }
     .header-logo{
         width: 80%;
